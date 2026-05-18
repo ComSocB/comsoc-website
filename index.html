@@ -1,4 +1,17 @@
 <!DOCTYPE html>
+
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,6 +23,9 @@
 <body>
     <h1><img src="src/media/icon.png" id="icon">Computing Society of Sir William Borlase's Grammar School</h1>
     <h3>testing testing...</h3>
+    <div class="loader">
+        <h4> Estimated wait Time: 6 or 7 Minutes </h4>
+    </div>
     
 </body>
 </html>
