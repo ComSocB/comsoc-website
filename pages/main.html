@@ -1,21 +1,65 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ComSoc-Main</title>
+    <title>ComSoc Borlase</title>
+    <link rel="stylesheet" href="src/styles/main.css">
+    <link rel="icon" type="image/png" href="src/media/icon.png">
+    <style>
+        /* Container to center and arrange the boxes */
+        .box-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        /* Styling each link as a box */
+        .nav-box {
+            display: block;
+            width: 200px;
+            padding: 20px;
+            border-radius: 5px;
+            background-color: lightgray;
+            color: black;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+            font-family: sans-serif;
+            transition: background-color 0.2s ease;
+        }
+
+        /* Subtle hover effect for the boxes */
+        .nav-box:hover {
+            background-color: #b0b0b0;
+        }
+    </style>
 </head>
 <body>
-    <h1>ComSoc Borlase</h1>
-    <p>we do weekly computing activities bla bla bla</p>
-    <ul>
-        <li><a href="news.html">Upcoming activities</a></li>
-        <li><a href="join.html">Join us!</a></li>
-        <li><a href="minigame.html">Game</a></li>
-        <li><a href="news.html">News</a></li>
-        <li><a href="ask.html">Ask anything!</a></li>
-        <li><a href="gallery/gallery.html">Gallery</a></li>
-        <li><a href="about/about.html">About</a></li>
-    </ul>
+    <h1><img src="src/media/icon.png" id="icon" alt="icon">ComSoc Borlase!</h1>
+    <p style="text-align: center;">we do weekly computing activities bla bla bla</p>
+
+    <!-- Centered Box Navigation Links -->
+    <div class="box-container">
+        <a href="news.html" class="nav-box">Upcoming activities</a>
+        <a href="join.html" class="nav-box">Join us!</a>
+        <a href="minigame.html" class="nav-box">Game</a>
+        <a href="news.html" class="nav-box">News</a>
+        <a href="ask.html" class="nav-box">Ask anything!</a>
+        <a href="gallery/gallery.html" class="nav-box">Gallery</a>
+        <a href="about/about.html" class="nav-box">About</a>
+    </div>
+
+    <div class="loader"></div>
+    <h4 style="text-align: center;"> Estimated wait Time: 6 or 7 Minutes </h4>
+    
+    <!-- Nice centering job again! -->
+    <div style="display: flex; justify-content: center">
+        <button onclick="window.open('https://youtube.com')">
+            <p style="color: black; margin: 0;">Skip loading time</p>
+        </button>
+    </div>
 </body>
 </html>
