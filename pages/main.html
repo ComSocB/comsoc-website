@@ -4,32 +4,22 @@
 <meta charset="UTF-8">
 <title>ComSoc Borlase</title>
 <style>
- body {
-            /* Specifies the path to your image file */
-            background-image: url('seaaqua.avif'); 
-            
-            /* Prevents the image from repeating like a grid */
-            background-repeat: no-repeat; 
-            
-            /* Centers the image horizontally and vertically */
-            background-position: center; 
-            
-            /* Scales the image to completely cover the screen */
-            background-size: cover; 
-            
-            /* Keeps the background fixed in place while scrolling */
-            background-attachment: fixed; 
-            
-            /* Ensures the page body spans the full height of the screen */
-            min-height: 100vh; 
-            margin: 0;
-        }
- 
-  * { box-sizing: border-box; }
+  * { 
+    box-sizing: border-box; 
+  }
+
   body {
+    /* Combined Background Properties */
+    background-image: url('seaaqua.avif'); 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    background-size: cover; 
+    background-attachment: fixed; 
+    background-color: #0b2f4f; /* Fallback color */
+    
+    /* Layout Properties */
     margin: 0;
     font-family: sans-serif;
-    background-color: #0b2f4f;
     color: white;
     display: grid;
     grid-template-columns: 1fr 70px; /* main content | sidebar */
@@ -43,7 +33,7 @@
   }
 
   header {
-    background: rgba(0,0,0,0.3);
+    background: rgba(0,0,0,0.5); /* Made slightly darker for contrast */
     display: inline-block;
     padding: 15px 25px;
     align-self: flex-start;
@@ -56,7 +46,12 @@
   }
   header p { margin: 0; color: #cde; }
 
-  .tagline { margin-top: 40px; font-size: 1.4rem; }
+  /* Changed color to white for better readability against the background */
+  .tagline { 
+    margin-top: 40px; 
+    font-size: 1.4rem; 
+    color: white; 
+  }
 
   .news-btn {
     margin-top: 15px;
@@ -91,9 +86,11 @@
     margin-top: auto;
     padding-top: 60px;
   }
+  /* Changed color to white for visibility */
   .past-events h2 {
     text-decoration: underline;
     font-weight: normal;
+    color: white; 
   }
   .event-row {
     display: flex;
@@ -109,7 +106,7 @@
   /* Sidebar nav */
   nav.sidebar {
     grid-column: 2;
-    background: rgba(0,0,0,0.3);
+    background: rgba(0,0,0,0.4); /* Made darker for better visibility */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -129,6 +126,7 @@
   }
   nav.sidebar a:hover { background: rgba(255,255,255,0.1); }
 </style>
+
 </head>
 
 
