@@ -131,30 +131,31 @@
 
 
  <body>
- <div class="main">
-    <!-- 1. Added a semi-transparent dark background, padding, and rounded corners to the header box -->
-    <header style="background: rgba(0, 0, 0, 0.6); padding: 15px; border-radius: 8px; display: inline-block;">
-      <h1 style="color: #ffffff;" margin: 0 0 5px 0;">ComSoc Borlase +</h1>
-      <p style="color: #e0e0e0;" margin: 0;">H3 every Wednesday Break</p>
-    </header>
+  <div class="main" style="font-family: Verdana, sans-serif; padding: 20px;">
+    
+    <!-- One clean, unified card container for all header info -->
+    <div style="background: rgba(0, 0, 0, 0.55); backdrop-filter: blur(8px); padding: 25px; border-radius: 12px; display: inline-block; max-width: 400px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
+      
+      <header>
+        <h1 style="color: #ffffff; margin: 0 0 5px 0; font-size: 28px;">ComSoc Borlase +</h1>
+        <p style="color: #e0e0e0; margin: 0 0 20px 0; font-size: 14px; opacity: 0.9;">H3 every Wednesday Break</p>
+      </header>
 
-   <!-- 2. Changed tagline text to White so it stands out against the dark blue water -->
-   <header style="background: rgba(0, 0, 0, 0.6); padding: 10px; border-radius: 6px; display: inline-block;">
-  <p style="font-weight: bold; color: #ffffff;" font-family: Verdana, sans-serif; class="tagline">We do computing activities every week!</p>
-   </header>
-   <!-- 3. Changed news link to Bright Amber Gold for a clean, visible accent -->
-   <header style="background: rgba(0, 0, 0, 0.6); padding: 10px; border-radius: 6px; display: inline-block;">
-  <a href="news.html" target="_blank" class="news-btn" style="font-weight: 800; font-size: 20px; color: #ffffff;" font-family: Verdana, sans-serif;text-decoration: none;">ComSoc News/Events!</a>
-   </header>
-    <div class="join-section" style="margin-top: 20px;">
-      <!-- 4. Turned "Join Us!" into a solid Coral button with dark text so it instantly pops -->
-      <a href="join.html" class="join-btn" style="font-weight: bold; color: #1a1a24;" font-family: Verdana, sans-serif; background-color: #FF6B4A; padding: 10px 20px; border-radius: 5px; text-decoration: none; display: inline-block; margin-bottom: 5px;">Join Us!</a>
-      <p style="font-weight: bold; color: #ffffff;" font-family: Verdana, sans-serif; margin: 0;">Students only!</p>
+      <p class="tagline" style="font-weight: bold; color: #ffffff; margin: 0 0 15px 0; font-size: 16px; line-height: 1.4;">We do computing activities every week!</p>
+      
+      <a href="news.html" target="_blank" class="news-btn" style="font-weight: 700; font-size: 16px; color: #FFB800; text-decoration: none; display: inline-block; margin-bottom: 5px;">ComSoc News/Events!</a>
+    
     </div>
 
-    <div class="past-events" style="margin-top: 30px;">
-     <!-- 5. Changed Heading to White -->
-     <h2 style="font-weight: bold; color: #ffffff;" font-family: Verdana, sans-serif;">Past events</h2>
+    <!-- Interactive Join section spaced cleanly below -->
+    <div class="join-section" style="margin-top: 25px;">
+      <a href="join.html" class="join-btn" style="font-weight: bold; color: #1a1a24; background-color: #FF6B4A; padding: 12px 24px; border-radius: 6px; text-decoration: none; display: inline-block; margin-bottom: 8px; box-shadow: 0 4px 10px rgba(255,107,74,0.3);">Join Us!</a>
+      <p style="font-weight: bold; color: #ffffff; margin: 0; font-size: 14px; text-shadow: 1px 1px 4px rgba(0,0,0,0.6);">Students only!</p>
+    </div>
+
+    <!-- Past events section -->
+    <div class="past-events" style="margin-top: 40px;">
+     <h2 style="font-weight: bold; color: #ffffff; text-shadow: 1px 1px 4px rgba(0,0,0,0.6); margin-bottom: 15px;">Past events</h2>
       <div class="event-row">
         <div class="event-card"></div>
         <div class="event-card"></div>
