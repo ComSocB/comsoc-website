@@ -4,8 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ComSoc - Ask COMET!</title>
+    <link rel="icon" type="image/png" href="ComSoc.png">
 </head>
-<body>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>ComSoc Borlase</title>
+<link ComSoc.png>
+ <style>
+  * { 
+    box-sizing: border-box; 
+  }
+
+  body {
+    /* Combined Background Properties */
+    background-image: url('seaaqua.avif'); 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    background-size: cover; 
+    background-attachment: fixed; 
+    background-color: #0b2f4f; /* Fallback color */
+    
+    /* Layout Properties */
+    margin: 0;
+    font-family: sans-serif;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 70px; /* main content | sidebar */
+    min-height: 100vh;
+  }
+
+  .main {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  header {
+    background: rgba(0,0,0,0.5); /* Made slightly darker for contrast */
+    display: inline-block;
+    padding: 15px 25px;
+    align-self: flex-start;
+    border-radius: 4px;
+  }
+  header h1 {
+    color: #4be0d1;
+    border-bottom: 2px solid #4be0d1;
+    margin: 0 0 5px 0;
+  }
+  header p { margin: 0; color: #cde; }
+
+  /* Changed color to white for better readability against the background */
+  .tagline { 
+    margin-top: 40px; 
+    font-size: 1.4rem; 
+    color: white; 
+  }
+  </style>
+    <body>
     <a href="main.html">X</a>
     <h1>ComSoc : Ask me anything!</h1>
 
